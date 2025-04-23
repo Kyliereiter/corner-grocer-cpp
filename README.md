@@ -1,4 +1,4 @@
-# cs250-final-project
+# cs210-final-project
 # Corner Grocer Item Tracker - CS 210 Final Project
 
 ## 📌 Project Summary
