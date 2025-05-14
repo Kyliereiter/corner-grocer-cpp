@@ -1,59 +1,59 @@
-# cs210-final-project
-# Corner Grocer Item Tracker - CS 210 Final Project
+# Corner Grocer – Grocery Frequency Tracker (C++)
 
-## 📌 Project Summary
-
-This project was developed to help the Corner Grocer track how often items are purchased throughout the day. Using a text file of grocery items, the program processes the data and outputs the frequency of each item in three different formats:
-1. Individual item search
-2. A complete frequency list
-3. A text-based histogram
-
-It also creates a backup file (`frequency.dat`) of the data when the program starts.
+This C++ console application was developed for SNHU's CS 210 course (Project Three). It analyzes a grocery list stored in a file and calculates how many times each item appears. It also allows users to search for item counts and generate a histogram of all items purchased.
 
 ---
 
-## ✅ What I Did Well
+## 🛒 Features
 
-I’m proud of how organized and readable my code is. I used a class-based design (`GroceryTracker`) to keep things modular, and followed industry best practices like:
-- Inline comments
-- Clear naming conventions
-- Separate header and source files
-
----
-
-## 🔧 Room for Improvement
-
-If I had more time, I’d add user input validation for non-integer menu inputs and improve error handling when opening files. That would make the program more user-friendly and robust.
+- Reads grocery item data from an input file  
+- Tracks item frequency using `std::map`  
+- Allows user to:
+  - Search for a specific item’s frequency  
+  - View a list of all item frequencies  
+  - Display a histogram with visual asterisks  
+- Writes results to a backup file (`frequency.dat`)
 
 ---
 
-## 💻 What Was Challenging
+## 🧪 Sample Output
 
-The hardest part was using `std::map` to store and update item frequencies. I overcame this by reading documentation, referencing zyBooks examples, and writing small test cases.
+Search Result:
+Enter item name: apples
+Frequency of apples: 4
 
----
-
-## 🧠 Transferable Skills
-
-This project helped reinforce key concepts I’ll use again:
-- File I/O (reading & writing from text files)
-- C++ `map` usage
-- Structuring code with classes
-- Creating reusable functions and readable menus
+Histogram:
+apples: ****
+bread: ***
+milk: **
 
 ---
 
-## 🔄 Maintainability
+## 🛠️ Technologies Used
 
-To make this project maintainable and adaptable, I:
-- Used a class to isolate data logic
-- Wrote descriptive comments
-- Used loops and reusable functions
-- Kept all file paths and filenames easily editable
+- C++
+- File Input/Output
+- Standard Template Library (STL)
+- `std::map`
+- Console Interface
 
 ---
 
-### 🔗 Portfolio Submission
+## 📁 File Structure
 
-All relevant files are included in this repository for my SNHU CS Portfolio.
+- `main.cpp` – Main menu and input handling  
+- `GroceryTracker.cpp` – Class for counting and displaying data  
+- `GroceryTracker.h` – Header file for class definitions  
+- `CS210_Project_Three_Input_File.txt` – Sample grocery input  
+- `frequency.dat` – Output backup file
 
+---
+
+## 📚 Project Purpose
+
+This project demonstrates C++ fundamentals including:
+
+- Reading from and writing to files  
+- Using maps for data storage  
+- Modular code with header files  
+- Building user-friendly command-line tools
